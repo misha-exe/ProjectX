@@ -2,7 +2,6 @@ import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { PanInfo } from "framer-motion";
 import { Play, X, Volume2, VolumeX, Maximize2, Globe, ChevronUp, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 interface VideoCardProps {
   thumbnailUrl: string;
