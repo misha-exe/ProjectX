@@ -94,52 +94,6 @@ function SplitScreenModal({ isOpen, onClose, videoUrl, websiteUrl, title }: Spli
   }, []);
 
   // Simulated website content for the bottom panel
-  const WebsitePreview = () => (
-    <div className="w-full h-full bg-white overflow-y-auto">
-      {/* Mock Website Header */}
-      <div className="sticky top-0 bg-white border-b border-zinc-200 z-10">
-        <div className="flex items-center gap-3 px-4 py-3">
-          <div className="w-8 h-8 bg-zinc-900 rounded-lg flex items-center justify-center">
-            <Globe className="w-4 h-4 text-white" />
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-zinc-900">{new URL(websiteUrl).hostname}</p>
-            <p className="text-xs text-zinc-500">Secure connection</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Mock Website Content */}
-      <div className="p-4 space-y-6">
-        <div className="space-y-2">
-          <div className="h-48 bg-zinc-100 rounded-xl animate-pulse" />
-          <h2 className="text-2xl font-bold text-zinc-900">Welcome to {new URL(websiteUrl).hostname}</h2>
-          <p className="text-zinc-600">This is a preview of how the website loads below the video in the split-screen experience. On X/Twitter, this area would load the actual advertiser's landing page.</p>
-        </div>
-
-        <div className="space-y-3">
-          <div className="h-32 bg-zinc-100 rounded-lg" />
-          <div className="h-4 bg-zinc-200 rounded w-3/4" />
-          <div className="h-4 bg-zinc-200 rounded w-1/2" />
-        </div>
-
-        <div className="grid grid-cols-2 gap-3">
-          <div className="h-24 bg-zinc-100 rounded-lg" />
-          <div className="h-24 bg-zinc-100 rounded-lg" />
-        </div>
-
-        <div className="space-y-3">
-          <div className="h-4 bg-zinc-200 rounded w-full" />
-          <div className="h-4 bg-zinc-200 rounded w-5/6" />
-          <div className="h-4 bg-zinc-200 rounded w-4/6" />
-        </div>
-
-        <Button className="w-full" size="lg">
-          Learn More
-        </Button>
-      </div>
-    </div>
-  );
 
   return (
     <AnimatePresence>
@@ -219,7 +173,12 @@ function SplitScreenModal({ isOpen, onClose, videoUrl, websiteUrl, title }: Spli
             animate={{ height: `${100 - splitPosition}%` }}
             transition={{ type: "spring", damping: 30, stiffness: 300 }}
           >
-            <WebsitePreview />
+            <iframe 
+  src={websiteUrl} 
+  className="w-full h-full border-0 bg-white" 
+  title="embedded-site"
+/>
+            
           </motion.div>
         </motion.div>
       )}
@@ -232,20 +191,20 @@ const DEMO_CARDS = [
   {
     id: 1,
     thumbnailUrl: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=450&fit=crop",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    websiteUrl: "https://example.com/product-launch",
+    videoUrl: "https://cdv.naijaleakz.com/Many-Positions-During-Quickie.mp4",
+    websiteUrl: "https://crn77.com/4/10563000",
     title: "Amazing Product Demo",
     description: "Check out our latest innovation in action. Click to explore the full experience.",
-    domain: "example.com"
+    domain: "crn77.com"
   },
   {
     id: 2,
     thumbnailUrl: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=450&fit=crop",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-    websiteUrl: "https://demo.org/campaign",
+    videoUrl: "https://cdv.naijaleakz.com/Alicia-Kanini-porn-1.mp4",
+    websiteUrl: "https://crn77.com/4/10563000",
     title: "Behind the Scenes",
     description: "See how we create magic. Watch the video and visit our site for more.",
-    domain: "demo.org"
+    domain: "crn77.com"
   }
 ];
 
