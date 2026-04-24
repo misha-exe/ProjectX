@@ -171,11 +171,24 @@ function SplitScreenModal({ isOpen, onClose, videoUrl, websiteUrl, title }: Spli
             animate={{ height: `${100 - splitPosition}%` }}
             transition={{ type: "spring", damping: 30, stiffness: 300 }}
           >
+            <div className="absolute top-0 left-0 right-0 z-50 bg-zinc-900/90 backdrop-blur-md p-3 flex items-center justify-between">
+  <span className="text-xs text-zinc-400">Embedded view restricted?</span>
+  <button 
+    onClick={() => window.open(websiteUrl, '_blank', 'noopener,noreferrer')}
+    className="text-xs font-medium text-white bg-blue-600 hover:bg-blue-500 px-3 py-1.5 rounded-full transition-colors"
+  >
+    Open directly
+  </button>
+</div>
+            
             <iframe 
   src={websiteUrl} 
   className="w-full h-full border-0 bg-white" 
   title="embedded-site"
+  referrerPolicy="no-referrer"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 />
+            
             
           </motion.div>
         </motion.div>
