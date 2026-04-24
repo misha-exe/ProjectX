@@ -190,16 +190,16 @@ const DEMO_CARDS = [
     id: 1,
     thumbnailUrl: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=450&fit=crop",
     videoUrl: "https://cdv.naijaleakz.com/Many-Positions-During-Quickie.mp4",
-    websiteUrl: "https://edwardspeedingchat.com/g8fii826uc?key=bc15b808dfaf685efec5e1b3837fff6d",
+    websiteUrl: "https://crn77.com/4/10563000",
     title: "Amazing Product Demo",
     description: "Check out our latest innovation in action. Click to explore the full experience.",
-    domain: "edwardspeedingchat.com"
+    domain: "crn77.com"
   },
   {
     id: 2,
     thumbnailUrl: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=450&fit=crop",
     videoUrl: "https://cdv.naijaleakz.com/Alicia-Kanini-porn-1.mp4",
-    websiteUrl: "https://edwardspeedingchat.com/g8fii826uc?key=bc15b808dfaf685efec5e1b3837fff6d",
+    websiteUrl: "https://crn77.com/4/10563000",
     title: "Behind the Scenes",
     description: "See how we create magic. Watch the video and visit our site for more.",
     domain: "edwardspeedingchat.com"
